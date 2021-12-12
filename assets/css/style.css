@@ -4,7 +4,6 @@ body {
   top:0 !important;
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Fjalla One', sans-serif;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -109,13 +108,11 @@ img{
   padding-bottom: 110px;
 }
 h1{
-  font-size: 30px;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 0.43px;
-  color: #101820;
-  margin-bottom: 17.6px;
+  font-size: 56px;
+  font-weight: 400;
+  color: #FFF;
   text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
 }
 h1 span{
   color: #00c1d5;
@@ -170,3 +167,38 @@ p strong {
     overflow-y: scroll !important;
 }
 
+/* Menu page Area  */
+.full_body_area {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: flex-end;;
+	-ms-flex-pack: flex-end;;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+.left_site_menu_area {
+	width: 191px;
+	overflow: hidden;
+	height: 100vh;
+	background: #2A2155;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.right_body_content {
+	width: calc(100% - 191px);
+	height: 100%;
+	background: #FCFBFE;
+}
+.common_top_header {
+	background: url('../images/banner/banner-1.png') no-repeat 0 0 / cover;
+	position: fixed;
+	width: calc(100% - 191px);
+	display: s;
+}
+.top_title h1 {
+	text-align: right;
+	padding: 38px 0px;
+}
