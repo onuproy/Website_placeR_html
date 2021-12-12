@@ -6,7 +6,6 @@ body {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -89,7 +88,8 @@ a {
   padding: 0;
   list-style: none;
   outline: none !important;
-  text-decoration: none !important; 
+  text-decoration: none !important;
+  display: inline-block; 
 }
 
 input {
@@ -104,11 +104,11 @@ img{
   height: auto;
 }
 .sp{
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 h1{
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 400;
   color: #FFF;
   text-transform: uppercase;
@@ -124,7 +124,7 @@ p{
   font-style: normal;
   line-height: 1.28;
   letter-spacing: 0.26px;
-  color: #101820;
+  color: #FFF;
 }
 p strong {
 	color: #101820;
@@ -178,27 +178,118 @@ p strong {
 	overflow: hidden;
 }
 .left_site_menu_area {
-	width: 191px;
+	width: 170px;
 	overflow: hidden;
 	height: 100vh;
-	background: #2A2155;
+	background: #082149;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
 }
 .right_body_content {
-	width: calc(100% - 191px);
+	width: calc(100% - 170px);
 	height: 100%;
 	background: #FCFBFE;
 }
 .common_top_header {
 	background: url('../images/banner/banner-1.png') no-repeat 0 0 / cover;
 	position: fixed;
-	width: calc(100% - 191px);
-	display: s;
+	width: calc(100% - 170px);
+  height: 119px;
+  z-index: 1010;
 }
 .top_title h1 {
 	text-align: right;
-	padding: 38px 0px;
+	padding: 26px 0px;
+	margin-top: 7px;
+}
+.main_body_content {
+	margin-top: 118px;
+	background: #000000;
+}
+.logo a {
+	text-align: center;
+	box-shadow: 0px 0px 6px 1px #0d0d0d;
+	height: 119px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo a img {
+	height: 81px;
+	text-align: center;
+}
+.main_menu {
+	margin-top: 60px;
+}
+.main_menu ul li a {
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 11px 18px;
+	margin-bottom: 14px;
+	width: 100%;
+	transition: 0.5s;
+}
+.main_menu ul li a:hover{
+  background: #051630;
+  color: #E5AB40;
+}
+.menu_active{
+  background: #051630;
+  color: #E5AB40 !important;
+}
+.title h2 {
+	font-size: 25px;
+	color: #FFF;
+	font-weight: 700;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+.price_title {
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+.price_title h3 {
+	font-size: 21px;
+	font-weight: 700;
+	width: 80%;
+	line-height: normal;
+	color: #FFF;
+	position: relative;
+	display: inline-block;
+	background-color: black;
+}
+.price_title h3::after {
+	position: absolute;
+	content: "";
+	width: inherit;
+	height: 2px;
+	background: #FFF;
+	bottom: 13px;
+	z-index: 0;
+	right: 0;
+}
+.price_title h3::before {
+	position: absolute;
+	content: "";
+	width: inherit;
+	height: 2px;
+	background: #FFF;
+	bottom: 6px;
+	z-index: 0;
+	right: 0;
+}
+.price_title strong {
+	color: #ffffff;
+	font-size: 17px;
+	display: block;
+	overflow: hidden;
+	line-height: 22px;
 }
