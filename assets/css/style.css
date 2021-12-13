@@ -291,11 +291,10 @@ p strong {
 	width: 90%;
 }
 .item_block_price {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .item_price_with_image_block_area {
-	position: relative;
-	margin-bottom: 160px;
+	margin-bottom: 45px;
 }
 .item_price_with_image_block {
 	background: #E8E0D9;
@@ -312,9 +311,8 @@ p strong {
 	color: #051630;
 }
 .food_image {
-	position: absolute;
-	top: 150px;
-	right: 30px;
+	margin-top: -132px;
+	margin-right: 30px;
 }
 .food_image img {
 	width: 100%;
