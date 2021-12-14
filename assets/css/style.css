@@ -321,3 +321,31 @@ p strong {
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
+.left_after_icon{
+	position: relative;
+}
+.left_after_icon::after {
+	position: absolute;
+	content: "";
+	background-image: url('../images/icon/left_after.png');
+	width: 18px;
+	height: 37px;
+	left: -24px;
+	top: -5px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.right_after_icon{
+	position: relative;
+}
+.right_after_icon::after {
+	position: absolute;
+	content: "";
+	background-image: url('../images/icon/right_after.png');
+	width: 18px;
+	height: 37px;
+	right: -24px;
+	top: -5px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
