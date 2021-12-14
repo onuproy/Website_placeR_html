@@ -250,6 +250,7 @@ p strong {
 	justify-content: space-between;
 	align-items: flex-end;
 	margin-bottom: 15px;
+	width: 89%;
 }
 .p_price strong{
 	color: #ffffff;
@@ -259,27 +260,27 @@ p strong {
 	font-weight: 700;
 	line-height: normal;
 	color: #FFF;
-	display: inline-block;
+	display: inline;
+	background: #000 !important;
+	z-index: 9;
 	position: relative;
+	padding-right: 6px;
 }
-/* .price_title h3::after {
-	position: absolute;
+.price_title::after {
 	content: "";
 	width: 100%;
-	height: 2px;
-	background: #FFF;
-	bottom: 13px;
-	right: 0;
-}
-.price_title h3::before {
+	height: 12px;
+	border-top: 3px solid #E5AB40;
+	border-bottom: 3px solid #E5AB40;
+	display: inline-block;
 	position: absolute;
-	content: "";
-	width: 100%;
-	height: 2px;
-	background: #FFF;
+	left: 0;
 	bottom: 6px;
-	right: 0;
-} */
+}
+.price_title {
+	position: relative;
+	width: calc(100% - 49px);
+}
 .price_title strong {
 	color: #ffffff;
 	font-size: 17px;
@@ -306,6 +307,7 @@ p strong {
 }
 .item_price_with_image_block .price_title h3 {
 	color: #051630;
+	background-color: #E8E0D9 !important;
 }
 .item_price_with_image_block .p_price strong {
 	color: #051630;
